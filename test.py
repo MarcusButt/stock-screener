@@ -19,16 +19,18 @@ now=dt.datetime.now()
 
 df=pdr.get_data_yahoo(stock,start,now)
 
-print(df)
-
 ma=50
 
 smaString="sma_"+str(ma)
 
 df[smaString]=df.iloc[:,4].rolling(window=ma).mean()
 
-print(df)
-
 df=df.iloc[ma:]
 
 print(df)
+
+for i in df.index:
+    if(df["Adj Close"][i]>df[smaString][i]):
+        print("The close is higher")
+    else:
+        print("The close is lower")
