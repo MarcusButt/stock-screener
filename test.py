@@ -29,8 +29,14 @@ df=df.iloc[ma:]
 
 print(df)
 
+numHigher=0
+numLower=0
+
 for i in df.index:
     if(df["Adj Close"][i]>df[smaString][i]):
-        print("The close is higher")
+        numHigher+=1
     else:
-        print("The close is lower")
+        numLower+=1
+
+print("The close is higher than the MA " + str(numHigher) + " times")
+print("The close is lower than the MA " + str(numLower) + " times")
