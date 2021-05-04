@@ -1,7 +1,3 @@
-function ourFunction(a, b) {
-    console.log(a - b);
-}
+var Questrade = require('questrade');
 
-ourFunction(22, 5);
-
-(console.log())
+var qt = new Questrade('<LfJGdvYGwGDxJdYAvtvlBNWBnr9EPw>');

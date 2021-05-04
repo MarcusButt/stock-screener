@@ -69,4 +69,40 @@ for i in df.index:
 
 print(percentChange)
 
+gains=0
+ng=0
+losses=0
+nl=0
+totalR=1
 
+for i in percentChange:
+    if(i>0):
+        gains+=i
+        ng+=1
+    else:
+        losses+=i
+        nl+=1
+    totalR=totalR*((i/100)+1)
+
+totalR=round((totalR-1)*100,2)
+
+if(ng>0):
+    avgGain=gains/ng
+    maxR=str(max(percentChange))
+else:
+    avgGain=0
+    maxR="undefined"
+
+if(nl>0):
+    avgLoss=losses/nl
+    maxL:=str(max(percentChange))
+    ratio=str(-avgGain/avgLoss)
+else:
+    avgLoss=0
+    maxL="undefined"
+    ratio="infinte"
+
+if(ng>0 or nl>0):
+    battingAvg=ng/(ng+nl)
+else:
+    battingAvg=0
