@@ -95,7 +95,7 @@ else:
 
 if(nl>0):
     avgLoss=losses/nl
-    maxL:=str(max(percentChange))
+    maxL=str(min(percentChange))
     ratio=str(-avgGain/avgLoss)
 else:
     avgLoss=0
