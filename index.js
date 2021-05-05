@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 var Questrade = require('questrade');
 
-var qt = new Questrade('<LfJGdvYGwGDxJdYAvtvlBNWBnr9EPw>');
+lSX623zIurCS4wFhJA3PHMTErRu9PvoO0; 
+
