@@ -96,13 +96,16 @@
 
 .main{
     display: flex;
-    justify-content: space-between;
 }
-.searchbarDiv {
+
+.middle {
     text-align: center;
     width: 60%;
-    margin-top: 6%;
     margin-left: 18%;
+}
+.searchbar-div {
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .searchbar {
@@ -111,3 +114,29 @@
     width: 80%;
 }
 
+.hompage-screener {
+    text-align: center;
+    width: 60%;
+    margin-left: 18%;
+}
+
+.filter-title {
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgb(rgb(78, 78, 78));
+}
+
+.screener-header{
+    width: 10%;
+    padding: 1%;
+    color: whitesmoke;
+}
+
+.screener-input {
+    text-align: left;
+    padding: 1%;
+    width: 10%;
+}
+
+label {
+    color: whitesmoke;
+}
