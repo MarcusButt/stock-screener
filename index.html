@@ -67,9 +67,32 @@
                 <div class="searchbar-div">
                     <input type="text" placeholder="Search company name or ticker..." class="searchbar">
                 </div>
-                <div class="homepage-screener">
+                <form class="homepage-screener">
                     <label for="marketcap">Market Cap (in $USD millions):</label>
                     <input type="number" id="marketcap" name="marketcap" min="0" max="5000">
+                    <label for="sector">Sector:</label>
+                    <select name="sector" id="sector">
+                        <option value="communications">Communications</option>
+                        <option value="cons-disc">Consumer Discretionary</option>
+                        <option value="cons-staples">Consumer Staples</option>
+                        <option value="energy">Energy</option>
+                        <option value="financials">Financials</option>
+                        <option value="health-care">Health Care</option>
+                        <option value="industrials">Industrials</option>
+                        <option value="materials">Materials</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="technology">Technology</option>
+                        <option value="utilities">Utilities</option>
+                    </select>
+                    <label for="exchange">Exchange:</label>
+                    <select name="exchange" id="exchange">
+                        <option value="cnsx">CNSX</option>
+                        <option value="nasdaq">NASDAQ</option>
+                        <option value="nyse">NYSE</option>
+                        <option value="arca">NYSE:ARCA</option>
+                        <option value="tsx">TSX</option>
+                    </select>
+                    </form> 
                 </div>
             </div>
         </section>
