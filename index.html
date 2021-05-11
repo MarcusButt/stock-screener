@@ -66,34 +66,90 @@
             <div class="middle">
                 <div class="searchbar-div">
                     <input type="text" placeholder="Search company name or ticker..." class="searchbar">
+                    <h3 class="or-bubble">OR</h3>
                 </div>
-                <form class="homepage-screener">
-                    <label for="marketcap">Market Cap (in $USD millions):</label>
-                    <input type="number" id="marketcap" name="marketcap" min="0" max="5000">
-                    <label for="sector">Sector:</label>
-                    <select name="sector" id="sector">
-                        <option value="communications">Communications</option>
-                        <option value="cons-disc">Consumer Discretionary</option>
-                        <option value="cons-staples">Consumer Staples</option>
-                        <option value="energy">Energy</option>
-                        <option value="financials">Financials</option>
-                        <option value="health-care">Health Care</option>
-                        <option value="industrials">Industrials</option>
-                        <option value="materials">Materials</option>
-                        <option value="real-estate">Real Estate</option>
-                        <option value="technology">Technology</option>
-                        <option value="utilities">Utilities</option>
-                    </select>
-                    <label for="exchange">Exchange:</label>
-                    <select name="exchange" id="exchange">
-                        <option value="cnsx">CNSX</option>
-                        <option value="nasdaq">NASDAQ</option>
-                        <option value="nyse">NYSE</option>
-                        <option value="arca">NYSE:ARCA</option>
-                        <option value="tsx">TSX</option>
-                    </select>
-                    </form> 
-                </div>
+                <div class="middle-container">
+                    <form class="homepage-screener">
+                        <div class="grid1">
+                            <label for="marketcap">Market Cap (in $USD millions):</label>
+                            <input type="number" id="marketcap" name="marketcap" min="0" max="5000">
+                        </div>
+                        <div class="grid2">
+                            <label for="sector">Sector:</label>
+                            <select name="sector" id="sector">
+                                <option value="Any">Any</option>
+                                <option value="communications">Communications</option>
+                                <option value="cons-disc">Consumer Discretionary</option>
+                                <option value="cons-staples">Consumer Staples</option>
+                                <option value="energy">Energy</option>
+                                <option value="financials">Financials</option>
+                                <option value="health-care">Health Care</option>
+                                <option value="industrials">Industrials</option>
+                                <option value="materials">Materials</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="technology">Technology</option>
+                                <option value="utilities">Utilities</option>
+                            </select>
+                        </div>
+                        <div class="grid3">
+                            <label for="exchange">Exchange:</label>
+                            <select name="exchange" id="exchange">
+                                <option value="Any">Any</option>
+                                <option value="cnsx">CNSX</option>
+                                <option value="nasdaq">NASDAQ</option>
+                                <option value="nyse">NYSE</option>
+                                <option value="arca">NYSE:ARCA</option>
+                                <option value="tsx">TSX</option>
+                            </select>
+                        </div>
+                        <div class="grid4">
+                            <label for="volume">Volume:</label>
+                            <input type="number" id="volume" name="volume" min="0">
+                        </div>
+                        <div class="grid5">
+                            <label for="avg-volume">Avg. Volume:</label>
+                            <input type="number" id="avg-volume" name="avg-volume" min="0">
+                        </div>
+                        <div class="grid6">
+                            <label for="percent-change">% Change:</label>
+                            <select name="timeframe" id="timeframe">
+                                <option disabled selectted value> - Select a Timeframe - </option>
+                                <option value="daily">Day</option>
+                                <option value="daily">Week</option>
+                                <option value="daily">Month</option>
+                                <option value="daily">Quarter</option>
+                                <option value="daily">Year</option>
+                            </select>
+                            <input type="number" id="percent-change" name="percent-change">
+                        </div>
+                        <div class="grid7">
+                            <label for="eps">EPS:</label>
+                            <select name="timeframe" id="timeframe">
+                                <option disabled selectted value> - Select a Timeframe - </option>
+                                <option value="daily">Quarter</option>
+                                <option value="daily">Year</option>
+                                <input type="number" id="eps" name="eps">
+                        </div>
+                        <div class="grid8">
+                            <label for="percent-eps-change">% EPS Change:</label>
+                            <select name="timeframe" id="timeframe">
+                                <option disabled selectted value> - Select a Timeframe - </option>
+                                <option value="daily">Quarter</option>
+                                <option value="daily">Year</option>
+                                <option value="TTM">TTM</option>
+                                <input type="number" id="percent-change" name="percent-change">
+                            </select>
+                        </div>
+                        <div class="grid9">
+                            <label for="price-earnings">P/E Ratio:</label>
+                            <input type="number" id="price-earnings" name="price-earnings" min="0">
+                        </div>
+                        <div class="grid10">
+                            <label for="price-sales">P/S Ratio:</label>
+                            <input type="number" id="price-sales" name="price-sales" min="0">
+                        </div>
+                    </form>
+                </div> 
             </div>
             <div class="watchlist">
                 <div class="watchlist-header">
