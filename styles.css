@@ -94,7 +94,7 @@
     position: absolute;
     left: 20%;
     bottom: 1%;
-    padding-right: 2%;
+    padding-left: 2%;
 }
 
 .sidebar-spacing {
@@ -215,6 +215,48 @@
 .grid10 {
     grid-row: 3/4;
     grid-column: 2/3;
+    align-self: center;
+    overflow: hidden;
+}
+
+.grid11 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    align-self: center;
+    overflow: hidden;
+}
+
+.grid12 {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    align-self: center;
+    overflow: hidden;
+}
+
+.grid13 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    align-self: center;
+    overflow: hidden;
+}
+
+.grid14 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    align-self: center;
+    overflow: hidden;
+}
+
+.grid15 {
+    grid-row: 4/5;
+    grid-column: 3/4;
+    align-self: center;
+    overflow: hidden;
+}
+
+.grid16 {
+    grid-row: 4/5;
+    grid-column: 4/5;
     align-self: center;
     overflow: hidden;
 }
