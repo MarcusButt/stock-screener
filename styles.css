@@ -231,7 +231,7 @@ background-color: rgb(39, 39, 39);
 }
 
 .middle {
-    position: relative;
+    position: fixed;
     margin-top: 13%;
     text-align: center;
     width: 60%;
@@ -268,9 +268,10 @@ background-color: rgb(39, 39, 39);
 .homepage-screener {
     display: grid;
     grid-template-columns: repeat(4, 20%);
-    grid-template-rows: repeat(5, 16%);
+    grid-template-rows: repeat(8, 15%);
     gap: 2%;
     margin-top: 5%;
+    padding-top: 2%;
     text-align: center;
     font-size: 14px;
     width: 80%;
@@ -278,146 +279,154 @@ background-color: rgb(39, 39, 39);
     justify-content: center;
     background-color: #212121;
     border-radius: 20px;
+    overflow-y: scroll;
 }
 
 .grid1{
     grid-row: 1/2;
     grid-column: 1/2;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid2 {
     grid-row: 1/2;
     grid-column: 2/3;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid3 {
     grid-row: 1/2;
     grid-column: 3/4;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid4 {
     grid-row: 1/2;
     grid-column: 4/5;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid5 {
     grid-row: 2/3;
     grid-column: 1/2;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid6 {
     grid-row: 2/3;
     grid-column: 2/3;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid7 {
     grid-row: 2/3;
     grid-column: 3/4;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid8 {
     grid-row: 2/3;
     grid-column: 4/5;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid9 {
     grid-row: 3/4;
     grid-column: 1/2;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid10 {
     grid-row: 3/4;
     grid-column: 2/3;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid11 {
     grid-row: 3/4;
     grid-column: 3/4;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid12 {
     grid-row: 3/4;
     grid-column: 4/5;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid13 {
     grid-row: 4/5;
     grid-column: 1/2;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid14 {
     grid-row: 4/5;
     grid-column: 2/3;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid15 {
     grid-row: 4/5;
     grid-column: 3/4;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid16 {
     grid-row: 4/5;
     grid-column: 4/5;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid17 {
     grid-row: 5/6;
     grid-column: 1/2;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid18 {
     grid-row: 5/6;
     grid-column: 2/3;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid19 {
     grid-row: 5/6;
     grid-column: 3/4;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
 }
 
 .grid20 {
     grid-row: 5/6;
     grid-column: 4/5;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: hidden;
+}
+
+.grid21 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    align-self: flex-start;
+    overflow: auto;
 }
 
 .middle-container {
