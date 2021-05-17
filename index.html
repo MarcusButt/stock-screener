@@ -103,6 +103,7 @@
                 </div>
                 <div class="middle-container">
                     <form class="homepage-screener">
+
                         <div class="filter-group">
                             <div class="filter-group-header">
                                 <h4>General</h4>
@@ -145,119 +146,152 @@
                                 <label for="employees">Number of Employees:</label>
                                 <input type="number" id="employees" name="employees" class="screener-input" min="1">
                             </div>
+                            <div class="filter-property">
+                                <label for="volume">Volume:</label>
+                                <input type="number" id="volume" name="volume" class="screener-input" min="0">
+                            </div>
+                            <div class="filter-property">
+                                <label for="avg-volume">Avg. Volume:</label>
+                                <input type="number" id="avg-volume" name="avg-volume" class="screener-input" min="0">
+                            </div>
                         </div>
+
                         <div class="filter-group">
                             <div class="filter-group-header">
                                 <h4>Performance</h4>
                             </div>
                         </div>
+                        <div class="filter-group-body">
+                            <div class="filter-property">
+                                <label for="percent-change">% Change:</label>
+                                <select name="timeframe" id="timeframe">
+                                    <option disabled selectted value> - Select a Timeframe - </option>
+                                    <option value="daily">Day</option>
+                                    <option value="daily">Week</option>
+                                    <option value="daily">Month</option>
+                                    <option value="daily">Quarter</option>
+                                    <option value="daily">Year</option>
+                                </select>
+                                <input type="number" id="percent-change" name="percent-change" class="screener-input">
+                            </div>
+                        </div>
+                    
                         <div class="filter-group">
                             <div class="filter-group-header">
                                 <h4>Income Statement</h4>
                             </div>
                         </div>
+                        <div class="filter-group-body">
+
+                        </div>
+                        
                         <div class="filter-group">
                             <div class="filter-group-header">
                                 <h4>Balance Sheet</h4>
                             </div>
                         </div>
-                        <div class="grid4">
-                            <label for="volume">Volume:</label>
-                            <input type="number" id="volume" name="volume" class="screener-input" min="0">
-                        </div>
-                        <div class="grid5">
-                            <label for="avg-volume">Avg. Volume:</label>
-                            <input type="number" id="avg-volume" name="avg-volume" class="screener-input" min="0">
-                        </div>
-                        <div class="grid6">
-                            <label for="percent-change">% Change:</label>
-                            <select name="timeframe" id="timeframe">
-                                <option disabled selectted value> - Select a Timeframe - </option>
-                                <option value="daily">Day</option>
-                                <option value="daily">Week</option>
-                                <option value="daily">Month</option>
-                                <option value="daily">Quarter</option>
-                                <option value="daily">Year</option>
-                            </select>
-                            <input type="number" id="percent-change" name="percent-change" class="screener-input">
-                        </div>
-                        <div class="grid7">
-                            <label for="eps">EPS:</label>
-                            <select name="timeframe" id="timeframe">
-                                <option disabled selectted value> - Select a Timeframe - </option>
-                                <option value="daily">Quarter</option>
-                                <option value="daily">Year</option>
-                                <input type="number" id="eps" name="eps" class="screener-input">
-                        </div>
-                        <div class="grid8">
-                            <label for="percent-eps-change">% EPS Change:</label>
-                            <select name="timeframe" id="timeframe">
-                                <option disabled selectted value> - Select a Timeframe - </option>
-                                <option value="daily">Quarter</option>
-                                <option value="daily">Year</option>
-                                <option value="TTM">TTM</option>
-                                <input type="number" id="percent-change" name="percent-change" class="screener-input">
-                            </select>
-                        </div>
-                        <div class="grid9">
-                            <label for="price-earnings">P/E Ratio:</label>
-                            <input type="number" id="price-earnings" name="price-earnings" class="screener-input" min="0">
-                        </div>
-                        <div class="grid10">
-                            <label for="price-sales">P/S Ratio:</label>
-                            <input type="number" id="price-sales" name="price-sales" class="screener-input" min="0">
-                        </div>
-                        <div class="grid11">
-                            <label for="dividend">Dividend:</label>
-                            <input type="number" id="dividend" name="dividend" class="screener-input" min="0">
-                        </div>
-                        <div class="grid12">
-                            <label for="dividend-yield">Dividend Yield:</label>
-                            <input type="number" id="dividend-yield" name="dividend-yield" class="screener-input" min="0">
-                        </div>
-                        <div class="grid13">
-                            <label for="shares-outstanding">Shares Outstanding:</label>
-                            <input type="number" id="shares-outstanding" name="shares-outstanding" class="screener-input" min="0">
-                        </div>
-                        <div class="grid14">
-                            <label for="enterprise-value">Enterprise Value:</label>
-                            <input type="number" id="enterprise-value" name="enterprise-value" class="screener-input" min="0">
-                        </div>
-                        <div class="grid15">
-                            <label for="ebitda">EBITDA:</label>
-                            <input type="number" id="ebitda" name="ebitda" class="screener-input" min="0">
-                        </div>
-                        <div class="grid16">
-                            <label for="ev-ebitda">EV/EBITDA:</label>
-                            <input type="number" id="ev-ebitda" name="ev-ebitda" class="screener-input" min="0">
-                        </div>
-                        <div class="grid17">
-                            <label for="Beta">Beta:</label>
-                            <input type="number" id="beta" name="beta" class="screener-input">
-                        </div>
-                        <div class="grid18">
+                        <div class="filter-group-body">
+                            <div class="filter-property">
+                                <label for="current-ratio">Current Ratio:</label>
+                                <input type="number" id="current-ratio" name="current-ratio" class="screener-input">
+                            </div>
+                            <div class="filter-property">
+                                <label for="quick-ratio">Quick-Ratio:</label>
+                                <input type="number" id="quick-ratio" name="quick-ratio" class="screener-input">
+                            </div>
+                            <div class="filter-property">
+                                <label for="debt-equity">Debt-to-Equity Ratio:</label>
+                                <input type="number" id="debt-equity" name="debt-equity" class="screener-input">
+                            </div>
+                            <div class="filter-property">
+                                <label for="roe">Return on Equity:</label>
+                                <input type="number" id="roe" name="roe" class="screener-input" min="0">
+                            </div>
+                            <div class="filter-property">
+                                <label for="roa">Return on Assets:</label>
+                                <input type="number" id="roa" name="roa" class="screener-input" min="0">
+                            </div>
+
+                            
 
                         </div>
-                        <div class="grid19">
-                            <label for="Revenue">Revenue:</label>
-                            <input type="number" id="revenue" name="revenue" class="screener-input">
-                        </div>
-                        <div class="grid20">
-                            <label for="net-income">Net Income:</label>
-                            <input type="number" id="net-income" name="net-income" class="screener-input" min="0">
-                        </div>
-                        <div class="grid21">
-                            <label for="current-ratio">Current Ratio:</label>
-                            <input type="number" id="current-ratio" name="current-ratio" class="screener-input">
-                            <label for="quick-ratio">Quick-Ratio:</label>
-                            <input type="number" id="quick-ratio" name="quick-ratio" class="screener-input">
-                            <label for="debt-equity">Debt-to-Equity Ratio:</label>
-                            <input type="number" id="debt-equity" name="debt-equity" class="screener-input">
-                            <label for="roe">Return on Equity:</label>
-                            <input type="number" id="roe" name="roe" class="screener-input" min="0">
-                            <label for="roa">Return on Assets:</label>
-                            <input type="number" id="roa" name="roa" class="screener-input" min="0">
-                        </div>
+                            <div class="grid7">
+                                <label for="eps">EPS:</label>
+                                <select name="timeframe" id="timeframe">
+                                    <option disabled selectted value> - Select a Timeframe - </option>
+                                    <option value="daily">Quarter</option>
+                                    <option value="daily">Year</option>
+                                    <input type="number" id="eps" name="eps" class="screener-input">
+                            </div>
+                            <div class="grid8">
+                                <label for="percent-eps-change">% EPS Change:</label>
+                                <select name="timeframe" id="timeframe">
+                                    <option disabled selectted value> - Select a Timeframe - </option>
+                                    <option value="daily">Quarter</option>
+                                    <option value="daily">Year</option>
+                                    <option value="TTM">TTM</option>
+                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
+                                </select>
+                            </div>
+                            <div class="grid9">
+                                <label for="price-earnings">P/E Ratio:</label>
+                                <input type="number" id="price-earnings" name="price-earnings" class="screener-input" min="0">
+                            </div>
+                            <div class="grid10">
+                                <label for="price-sales">P/S Ratio:</label>
+                                <input type="number" id="price-sales" name="price-sales" class="screener-input" min="0">
+                            </div>
+                            <div class="grid11">
+                                <label for="dividend">Dividend:</label>
+                                <input type="number" id="dividend" name="dividend" class="screener-input" min="0">
+                            </div>
+                            <div class="grid12">
+                                <label for="dividend-yield">Dividend Yield:</label>
+                                <input type="number" id="dividend-yield" name="dividend-yield" class="screener-input" min="0">
+                            </div>
+                            <div class="grid13">
+                                <label for="shares-outstanding">Shares Outstanding:</label>
+                                <input type="number" id="shares-outstanding" name="shares-outstanding" class="screener-input" min="0">
+                            </div>
+                            <div class="grid14">
+                                <label for="enterprise-value">Enterprise Value:</label>
+                                <input type="number" id="enterprise-value" name="enterprise-value" class="screener-input" min="0">
+                            </div>
+                            <div class="grid15">
+                                <label for="ebitda">EBITDA:</label>
+                                <input type="number" id="ebitda" name="ebitda" class="screener-input" min="0">
+                            </div>
+                            <div class="grid16">
+                                <label for="ev-ebitda">EV/EBITDA:</label>
+                                <input type="number" id="ev-ebitda" name="ev-ebitda" class="screener-input" min="0">
+                            </div>
+                            <div class="grid17">
+                                <label for="Beta">Beta:</label>
+                                <input type="number" id="beta" name="beta" class="screener-input">
+                            </div>
+                            <div class="grid18">
+
+                            </div>
+                            <div class="grid19">
+                                <label for="Revenue">Revenue:</label>
+                                <input type="number" id="revenue" name="revenue" class="screener-input">
+                            </div>
+                            <div class="grid20">
+                                <label for="net-income">Net Income:</label>
+                                <input type="number" id="net-income" name="net-income" class="screener-input" min="0">
+                            </div>
+                            <div class="grid21">
+                                <label for="current-ratio">Current Ratio:</label>
+                                <input type="number" id="current-ratio" name="current-ratio" class="screener-input">
+                                <label for="quick-ratio">Quick-Ratio:</label>
+                                <input type="number" id="quick-ratio" name="quick-ratio" class="screener-input">
+                                <label for="debt-equity">Debt-to-Equity Ratio:</label>
+                                <input type="number" id="debt-equity" name="debt-equity" class="screener-input">
+                                <label for="roe">Return on Equity:</label>
+                                <input type="number" id="roe" name="roe" class="screener-input" min="0">
+                                <label for="roa">Return on Assets:</label>
+                                <input type="number" id="roa" name="roa" class="screener-input" min="0">
+                            </div>
                     </form>
                 </div> 
             </div>
