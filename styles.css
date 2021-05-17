@@ -232,9 +232,12 @@ background-color: rgb(39, 39, 39);
 
 .middle {
     position: fixed;
-    margin-top: 13%;
+    top: 15%;
+    margin-top: 2%;
     text-align: center;
     width: 60%;
+    height: 80%;
+    overflow: hidden;
 }
 .searchbar-div {
     width: 100%;
