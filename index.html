@@ -182,7 +182,26 @@
                             </div>
                         </div>
                         <div class="filter-group-body">
-
+                            <div class="filter-property">
+                            <label for="eps">EPS:</label>
+                                <select name="timeframe" id="timeframe">
+                                    <option disabled selectted value> - Select a Timeframe - </option>
+                                    <option value="daily">Quarter</option>
+                                    <option value="daily">Year</option>
+                                <input type="number" id="eps" name="eps" class="screener-input" placeholder="0">
+                                <p class ="filter-body-text">to</p>
+                                <input type="number" id="eps" name="eps" class="screener-input">
+                            </div>
+                            <div class="filter-property">
+                                <label for="percent-eps-change">% EPS Change:</label>
+                                <select name="timeframe" id="timeframe">
+                                    <option disabled selectted value> - Select a Timeframe - </option>
+                                    <option value="daily">Quarter</option>
+                                    <option value="daily">Year</option>
+                                    <option value="TTM">TTM</option>
+                                </select>
+                                <input type="number" id="percent-change" name="percent-change" class="screener-input">
+                            </div>
                         </div>
                         
                         <div class="filter-group">
@@ -211,28 +230,8 @@
                                 <label for="roa">Return on Assets:</label>
                                 <input type="number" id="roa" name="roa" class="screener-input" min="0">
                             </div>
-
-                            
-
                         </div>
-                            <div class="grid7">
-                                <label for="eps">EPS:</label>
-                                <select name="timeframe" id="timeframe">
-                                    <option disabled selectted value> - Select a Timeframe - </option>
-                                    <option value="daily">Quarter</option>
-                                    <option value="daily">Year</option>
-                                    <input type="number" id="eps" name="eps" class="screener-input">
-                            </div>
-                            <div class="grid8">
-                                <label for="percent-eps-change">% EPS Change:</label>
-                                <select name="timeframe" id="timeframe">
-                                    <option disabled selectted value> - Select a Timeframe - </option>
-                                    <option value="daily">Quarter</option>
-                                    <option value="daily">Year</option>
-                                    <option value="TTM">TTM</option>
-                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
-                                </select>
-                            </div>
+
                             <div class="grid9">
                                 <label for="price-earnings">P/E Ratio:</label>
                                 <input type="number" id="price-earnings" name="price-earnings" class="screener-input" min="0">

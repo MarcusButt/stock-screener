@@ -249,7 +249,8 @@ background-color: rgb(39, 39, 39);
     border-radius: 20px;
     color: black;
     font-weight: bold;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
+    margin-top: 4%;
     padding: 1%;
     width:90%;
 }
@@ -271,7 +272,7 @@ background-color: rgb(39, 39, 39);
 .homepage-screener {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 4%;
     text-align: center;
     font-size: 14px;
     width: 90%;
@@ -326,6 +327,7 @@ background-color: rgb(39, 39, 39);
     display: flex;
     padding: 1%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .middle-container {
@@ -340,6 +342,10 @@ background-color: rgb(39, 39, 39);
     border: 1px solid rgb(rgb(78, 78, 78));
 }
 
+.filter-body-text {
+    color: #E45300;
+}
+
 .screener-header{
     width: 10%;
     padding: 1%;
@@ -350,6 +356,7 @@ background-color: rgb(39, 39, 39);
     text-align: left;
     width: 94%;
     background-color: rgb( rgb(121, 255, 121));
+    max-width: 25%;
 }
 
 label {
@@ -363,7 +370,6 @@ input {
     margin-left: 5%;
     margin-right: 5%;
     padding: 1%;
-    width: 50%;
     background-color: rgb(245, 174, 108);
 }
 
@@ -371,7 +377,7 @@ select {
     margin-left: 5%;
     margin-right: 5%;
     padding: 1%;
-    width: 50%;
+    max-width: 50%;
     background-color: rgb(245, 174, 108);
 }
 
