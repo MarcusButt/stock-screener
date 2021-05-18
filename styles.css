@@ -52,33 +52,33 @@
     position: relative;
     height: 50px;
     width: 50px;
-    color: black;
-    background-color: #E45300;
-    border-color: black;
+    color:#E45300;
+    background-color: black;
+    border-color:#E45300;
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
 }
 
 .alert-button:hover {
-    color:#E45300;
-    background-color: black;
-    border-color:#E45300;
+    color: black;
+    background-color: #E45300;
+    border-color: black;
 }
 
 .profile-button:hover {
-    color:#E45300;
-    background-color: black;
-    border-color:#E45300;
+    color: black;
+    background-color: #E45300;
+    border-color: black;
 }
 
 .profile-button {
     position: relative;
     height: 50px;
     width: 50px;
-    color: black;
-    background-color: #E45300;
-    border-color: black;
+    color:#E45300;
+    background-color: black;
+    border-color:#E45300;
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
@@ -159,7 +159,8 @@
 
 .economic-calendar {
     color: #E45300;
-    border: 2px solid black;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(80, 80, 80);
     border-collapse: collapse;
     margin-left: 2%;
     margin-right: 2%;
@@ -170,7 +171,7 @@
 }
 
 th, td {
-    border: 2px solid black;
+    border: 2px solid rgb(80, 80, 80);
     padding: 2px;
 }
 
@@ -207,21 +208,21 @@ th, td {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: whitesmoke;
+    background-color: rgb(128, 128, 128);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 10%;
   }
 
 input:checked + .fed-slider {
-background-color: #E45300;
+    background-color: #E45300;
 }
   
 input:checked + .fed-slider:before {
--webkit-transform: translateX(26px);
--ms-transform: translateX(26px);
-transform: translateX(26px);
-background-color: rgb(39, 39, 39);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: rgb(0, 0, 0);
 }
 
 .main{
@@ -280,6 +281,11 @@ background-color: rgb(39, 39, 39);
     justify-content: flex-start;
     background-color: #212121;
     border-radius: 20px;
+    overflow-y: hidden;
+}
+
+.scroll-box {
+    margin: 2%;
     overflow-y: scroll;
 }
 
@@ -293,8 +299,7 @@ background-color: rgb(39, 39, 39);
     position: relative;
     align-items: center;
     text-align: left;
-    margin-top: 4%;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
     width: 100%;
     height: 30px;
@@ -318,14 +323,24 @@ background-color: rgb(39, 39, 39);
     display: table;
     border-collapse: separate;
     position: relative;
-    margin-top: 2%;
 }
 
 .filter-property {
-    width: 48%;
     float: left;
     display: flex;
-    padding: 1%;
+    height: 44px;
+    width: 30%;
+    padding: 0.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-multi-property {
+    float: left;
+    display: flex;
+    height: 44px;
+    width: 90%;
+    padding: 0.5%;
     justify-content: space-between;
     align-items: center;
 }
@@ -354,7 +369,6 @@ background-color: rgb(39, 39, 39);
 
 .screener-input {
     text-align: left;
-    width: 94%;
     background-color: rgb( rgb(121, 255, 121));
     max-width: 25%;
 }
@@ -364,18 +378,19 @@ label {
     text-align: left;
     padding-left: 2%;
     max-width: 50%;
+    min-width: 20%;
 }
 
 input {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
     padding: 1%;
     background-color: rgb(245, 174, 108);
 }
 
 select {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
     padding: 1%;
     max-width: 50%;
     background-color: rgb(245, 174, 108);
@@ -408,10 +423,10 @@ select:focus {
 }
 
 .gainers-button {
-    border: 2px solid black;
-    background-color:rgb(245, 174, 108);
+    border: 2px solid #E45300;
     border-radius: 10px;
-    color: black;
+    background-color:rgb(0, 0, 0);
+    color: #E45300;
     padding: 5px 12px;
     font-size: 11px;
     cursor: pointer;
@@ -421,19 +436,23 @@ select:focus {
 
 .gainers-button:hover {
     background-color: #E45300;
+    color: black;
+    border: 2px solid black;
 }
 
 .gainers-button:focus {
     background-color: #E45300;
+    color: black;
+    border: 2px solid black;
 }
 
 .volume-button {
     width: 30%;
     height: 60%;
-    border: 2px solid black;
+    border: 2px solid #E45300;
     border-radius: 10px;
-    background-color:rgb(245, 174, 108);
-    color: black;
+    background-color:rgb(0, 0, 0);
+    color: #E45300;
     padding: 5px 12px;
     font-size: 11px;
     cursor: pointer;
@@ -441,19 +460,23 @@ select:focus {
 
 .volume-button:hover {
     background-color: #E45300;
+    color: black;
+    border: 2px solid black;
 }
 
 .volume-button:focus {
     background-color: #E45300;
+    color: black;
+    border: 2px solid black;
 }
 
 .losers-button {
     width: 30%;
     height: 60%;
-    border: 2px solid black;
+    border: 2px solid #E45300;
     border-radius: 10px;
-    background-color:rgb(245, 174, 108);
-    color: black;
+    background-color:rgb(0, 0, 0);
+    color: #E45300;
     padding: 5px 12px;
     font-size: 11px;
     cursor: pointer;
@@ -461,10 +484,14 @@ select:focus {
 
 .losers-button:hover {
     background-color: #E45300;
+    color: black;
+    border: 2px solid black;
 }
 
 .losers-button:focus {
     background-color: #E45300;
+    color: black;
+    border: 2px solid black;
 }
 
 .button-row {
