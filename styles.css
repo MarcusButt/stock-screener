@@ -386,8 +386,31 @@ input:checked + .fed-slider:before {
 .middle-container {
     height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph-container {
+    height: 60%;
+    width: 90%;
+    display: flex;
+    background-color: #212121;
+    color: #E45300;
+    border-radius: 20px;
     justify-content: center;
-    margin-right: 0%;
+    align-items: center;
+}
+
+.mini-screener {
+    height: 38%;
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    background-color: #212121;
+    color: #E45300;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter-title {
