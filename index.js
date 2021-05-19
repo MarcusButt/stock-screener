@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-var Questrade = require('questrade');
-
-lSX623zIurCS4wFhJA3PHMTErRu9PvoO0; 
+function toggleDisplay() {
+    var x = document.getElementById("filter-group-body");
+    if (x.style.display === "none") {
+      x.style.display = "table";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
