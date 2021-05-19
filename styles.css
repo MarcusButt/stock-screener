@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     left: 7%;
     background-color: black;
     border-radius: 20px;
@@ -284,7 +285,7 @@ input:checked + .fed-slider:before {
     text-align: center;
     font-size: 14px;
     width: 90%;
-    height: 100%;
+    height: 75%;
     justify-content: flex-start;
     background-color: #212121;
     border-radius: 20px;
