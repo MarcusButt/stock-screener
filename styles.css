@@ -184,7 +184,9 @@ th, td {
 
 .fed-button {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 60px;
     height: 34px;
 }
@@ -196,16 +198,14 @@ th, td {
 }
 
 .fed-slider {
-    position: absolute;
+    position: flex;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    justify-content: center;
+    width: 62px;
     background-color: rgb(245, 174, 108);
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 10%;
+    border-radius: 20px;
 }
 
 .fed-slider:before {
@@ -213,12 +213,12 @@ th, td {
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
+    left: 24px;
     bottom: 4px;
     background-color: rgb(128, 128, 128);
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 10%;
+    border-radius: 20px;
   }
 
 input:checked + .fed-slider {
