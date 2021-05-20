@@ -14,3 +14,18 @@ function toggleRotate(el) {
   el.classList.toggle('active');
 }
 
+(function(document){
+  var div = document.getElementById('button-box');
+  var icon = document.getElementById('filter-btn');
+  var active = false;
+
+  div.addEventListener('click', function(){
+      if(active){
+      icon.className = 'filter-group-btn';  
+      } else{
+      icon.className = 'filter-btn active';
+      }
+
+      active = !active;
+  });
+  })(document);
