@@ -316,7 +316,7 @@ input:checked + .fed-slider:before {
     font-size: 16px;
 }
 
-.filter-btn {
+.button-box {
     position: relative;
     white-space: nowrap;
     display: flex;
@@ -330,7 +330,8 @@ input:checked + .fed-slider:before {
     padding: 8px;
 }
 
-.filter-group-btn {
+.filter-btn.active {
+    transform:  rotate(-90deg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,7 +343,7 @@ input:checked + .fed-slider:before {
     cursor: pointer;
 }
 
-.filter-btn-open {
+.filter-group-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,7 +353,6 @@ input:checked + .fed-slider:before {
     height: 30px;
     width: 30px;
     cursor: pointer;
-    display: none;
 }
 
 .filter-group-body {

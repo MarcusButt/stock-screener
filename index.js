@@ -10,3 +10,7 @@ function toggleDisplay() {
     }
   }
 
+function toggleRotate(el) {
+  el.classList.toggle('active');
+}
+

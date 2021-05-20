@@ -82,17 +82,12 @@
                     <form class="homepage-screener">
                         <div class="scroll-box">
                             <div class="filter-group">
-                                <div class="filter-btn">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()">
-                                        <i class="fas fa-chevron-circle-right fa-2x"></i>
-                                    </button>
-                                </div>
-                                <div class="filter-btn-open">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn">
+                                <div class="button-box" id="button-box">
+                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()">
+                                <div class="filter-group-header" onclick="toggleDisplay()" ; onclick="toggleRotate('#filter-btn')">
                                     <h4>General</h4>
                                 </div>
                             </div>
@@ -168,17 +163,12 @@
                             </div>
 
                             <div class="filter-group">
-                                <div class="filter-btn">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()">
-                                        <i class="fas fa-chevron-circle-right fa-2x"></i>
-                                    </button>
-                                </div>
-                                <div class="filter-btn-open">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn">
+                                <div class="button-box">
+                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()">
+                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn')">
                                     <h4>Multiples</h4>
                                 </div>
                             </div>
@@ -198,17 +188,12 @@
                             </div>
 
                             <div class="filter-group">
-                                <div class="filter-btn">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()">
-                                        <i class="fas fa-chevron-circle-right fa-2x"></i>
-                                    </button>
-                                </div>
-                                <div class="filter-btn-open">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn">
+                                <div class="button-box">
+                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()">
+                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn')">
                                     <h4>Performance</h4>
                                 </div>
                             </div>
@@ -230,17 +215,12 @@
                             </div>
                         
                             <div class="filter-group">
-                                <div class="filter-btn">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()">
-                                        <i class="fas fa-chevron-circle-right fa-2x"></i>
-                                    </button>
-                                </div>
-                                <div class="filter-btn-open">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn">
+                                <div class="button-box">
+                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()">
+                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn')">
                                     <h4>Income Statement</h4>
                                 </div>
                             </div>
@@ -302,17 +282,12 @@
                             </div>
                             
                             <div class="filter-group">
-                                <div class="filter-btn">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()">
-                                        <i class="fas fa-chevron-circle-right fa-2x"></i>
-                                    </button>
-                                </div>
-                                <div class="filter-btn-open">
-                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn">
+                                <div class="button-box">
+                                    <button type="button" id="filter-btn" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()">
+                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn')">
                                     <h4>Balance Sheet</h4>
                                 </div>
                             </div>
@@ -372,6 +347,24 @@
                 x.style.display = "none";
                 }
             }
+        </script>
+
+        <script>
+            (function(document){
+            var div = document.getElementById('button-box');
+            var icon = document.getElementById('filter-btn');
+            var active = false;
+
+            div.addEventListener('click', function(){
+                if(active){
+                icon.className = 'filter-group-btn';  
+                } else{
+                icon.className = 'filter-btn active';
+                }
+
+                active = !active;
+            });
+            })(document);
         </script>
 
     </body>
