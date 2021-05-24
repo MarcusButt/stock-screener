@@ -124,7 +124,7 @@
 }
 
 .sidebar-row:hover {
-    background-color: #161616;
+    background-color: #101010;
 }
 
 
@@ -169,7 +169,7 @@
 
 .economic-calendar {
     color: #E45300;
-    background-color: rgb(0, 0, 0);
+    background-color: #101010;
     border: 2px solid rgb(80, 80, 80);
     border-collapse: collapse;
     margin-left: 2%;
