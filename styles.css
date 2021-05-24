@@ -394,7 +394,6 @@ input:checked + .fed-slider:before {
     float: left;
     display: flex;
     height: 44px;
-    width: 90%;
     justify-content: space-between;
     align-items: center;
 }
