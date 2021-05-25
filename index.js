@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function toggleDisplay() {
-    var x = document.getElementById("filter-group-body");
+    var x = document.getElementById("filter-group-body1");
     if (x.style.display === "none") {
       x.style.display = "table";
     } else {
@@ -10,13 +10,9 @@ function toggleDisplay() {
     }
   }
 
-function toggleRotate(el) {
-  el.classList.toggle('active');
-}
-
 (function(document){
   var div = document.getElementById('button-box');
-  var icon = document.getElementById('filter-btn');
+  var icon = document.getElementById('filter-btn1');
   var active = false;
 
   div.addEventListener('click', function(){

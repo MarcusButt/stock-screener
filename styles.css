@@ -246,12 +246,17 @@ input:checked + .fed-slider:before {
     top: 15%;
     margin-top: 2%;
     text-align: center;
-    width: 60%;
+    width: 56%;
     height: 80%;
     overflow: hidden;
 }
 .searchbar-div {
-    width: 100%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .searchbar {
@@ -260,10 +265,23 @@ input:checked + .fed-slider:before {
     border-radius: 20px;
     color: black;
     font-weight: bold;
+    margin-left: 0%;
     margin-bottom: 4%;
     margin-top: 4%;
     padding: 1%;
     width:90%;
+}
+
+.search-button {
+    display: flex;
+    width: 10%;
+    background-color: #212121;
+    border: 2px solid #E45300;
+    color: #E45300;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }
 
 .or-bubble {
@@ -286,8 +304,8 @@ input:checked + .fed-slider:before {
     margin-top: 4%;
     text-align: left;
     font-size: 14px;
-    width: 90%;
-    height: 75%;
+    width: 96%;
+    height: 72%;
     justify-content: flex-start;
     background-color: #212121;
     border-radius: 20px;
