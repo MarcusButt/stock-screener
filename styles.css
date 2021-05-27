@@ -258,7 +258,7 @@ input:checked + .fed-slider:before {
     margin-right: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #212121;
     border-radius: 20px;
 }
