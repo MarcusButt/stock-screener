@@ -253,7 +253,7 @@ input:checked + .fed-slider:before {
 .searchbar-div {
     width: 92%;
     padding: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -301,19 +301,19 @@ input:checked + .fed-slider:before {
     margin-right: 50%;
     color: #E45300;
     border-radius: 50%;
-    width:50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     background-color: #212121;
 }
 
 .homepage-screener {
     display: flex;
     flex-direction: column;
-    margin-top: 4%;
+    margin-top: 3%;
     text-align: left;
     font-size: 14px;
     width: 96%;
-    height: 74%;
+    height: 76%;
     justify-content: flex-start;
     background-color: #212121;
     border-radius: 20px;
