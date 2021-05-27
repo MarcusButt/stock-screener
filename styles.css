@@ -251,12 +251,16 @@ input:checked + .fed-slider:before {
     overflow: hidden;
 }
 .searchbar-div {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 92%;
+    padding: 2%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #212121;
+    border-radius: 20px;
 }
 
 .searchbar {
@@ -266,22 +270,26 @@ input:checked + .fed-slider:before {
     color: black;
     font-weight: bold;
     margin-left: 0%;
-    margin-bottom: 4%;
-    margin-top: 4%;
     padding: 1%;
-    width:90%;
+    width:84%;
 }
 
 .search-button {
     display: flex;
     width: 10%;
-    background-color: #212121;
+    background-color: #090909;
     border: 2px solid #E45300;
     color: #E45300;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
     height: 40px;
+}
+
+.search-button:hover {
+    background-color: #E45300;
+    color: #090909;
+    border-color: #090909;
 }
 
 .or-bubble {
@@ -305,7 +313,7 @@ input:checked + .fed-slider:before {
     text-align: left;
     font-size: 14px;
     width: 96%;
-    height: 72%;
+    height: 74%;
     justify-content: flex-start;
     background-color: #212121;
     border-radius: 20px;
@@ -338,12 +346,12 @@ input:checked + .fed-slider:before {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #090909;
+    background: black;
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: black;
+    background: #E45300;
     border-radius: 20px;
 }
 
