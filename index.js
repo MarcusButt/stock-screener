@@ -18,7 +18,7 @@ function toggleDisplay() {
   div.addEventListener('click', function(){
       if(active){
       icon.className = 'filter-group-btn';  
-      } else{
+      } else {
       icon.className = 'filter-btn active';
       }
 
