@@ -157,7 +157,7 @@
     align-items: center;
 }
 
-.calendar-container {
+.sidebar-content {
     position: relative;
     display: flex;
     text-align: center;
@@ -172,8 +172,8 @@
     background-color: #090909;
     border: 2px solid rgb(80, 80, 80);
     border-collapse: collapse;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
     width: 100%;
     text-align: left;
     font-size: 12px;
@@ -185,8 +185,8 @@
     background-color: #090909;
     border: 2px solid rgb(80, 80, 80);
     border-collapse: collapse;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
     width: 100%;
     text-align: left;
     font-size: 12px;
