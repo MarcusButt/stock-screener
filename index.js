@@ -2,7 +2,7 @@
 function toggleDisplay(id) {
     var x = document.getElementById(id);
     if (x.style.display === "none") {
-      x.style.display = "table";
+      x.style.display = "flex";
     } else {
       x.style.display = "none";
     }
@@ -15,5 +15,4 @@ function toggleRotate(id) {
   } else {
     icon.style.transform = "rotate(-90deg)";
   }
-
 }
