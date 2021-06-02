@@ -198,6 +198,12 @@ th, td {
     padding: 2px;
 }
 
+.activity-list {
+    border: none;
+    border-top: 2px solid rgb(80, 80, 80);
+    padding: 2px;
+}
+
 .fed-button {
     position: relative;
     display: flex;

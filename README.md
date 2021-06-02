@@ -3,13 +3,14 @@ This tool was designed to provide users with a simplified stock analysis interfa
 
 Features
 - Stock quotes by company search (name or ticker)
+- Economic Calendar
 - Basic graphing capabilities (line & candlestick)
 - Toggle volume bars and moving averages on graphs
 - Simple stock screener
 
 Information Included:
 - Company Overview
-- Management
+- Multiples
 - Financials
     a) Income Statement
     b) Balance Sheet

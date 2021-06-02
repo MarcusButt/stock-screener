@@ -10,7 +10,7 @@ function toggleDisplay() {
     }
   }
 
-(function(document){
+(function toggleRotate(document){
   var div = document.getElementById('button-box');
   var icon = document.getElementById('filter-btn1');
   var active = false;
