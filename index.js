@@ -1,4 +1,3 @@
-
 function toggleDisplay(id) {
     var x = document.getElementById(id);
     if (x.style.display === "none") {
@@ -9,10 +8,11 @@ function toggleDisplay(id) {
   }
 
 function toggleRotate(id) {
-  var icon = document.getElementById(id);
-  if (icon.style.transform === "rotate(-90deg)") {
-    icon.style.transform = "none";
+  var elm = document.getElementById(id);
+  var className = elm.className;
+  if(className.indexOf('filter-btn-active') === -1) {
+      elm.className = elm.className + 'filter-btn-active';
   } else {
-    icon.style.transform = "rotate(-90deg)";
+      elm.className = elm.className.replace('filter-btn-active', '');
   }
 }
