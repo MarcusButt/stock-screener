@@ -6,6 +6,7 @@
         <meta name="description" content="This is a stock analysis tool designed to help investors make well-informed decisions on their equity investments.">
         <meta name="keywords" content="stock, invest, analysis, research, screener, dividend, growth, value">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./index.js"></script>
         <title>Equity Analysis Tool</title>
     </head>
 
@@ -85,12 +86,12 @@
                     <form class="homepage-screener">
                         <div class="scroll-box">
                             <div class="filter-group">
-                                <div class="button-box" id="button-box">
-                                    <button type="button" id="filter-btn1" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
+                                <div class="button-box">
+                                    <button type="button" id="filter-btn1" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay('filter-group-body1')"; onclick="toggleRotate()">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn1')">
+                                <div class="filter-group-header" onclick="toggleDisplay('filter-group-body1')"; onclick="toggleRotate('filter-btn1')">
                                     <h4>General</h4>
                                 </div>
                             </div>
@@ -175,11 +176,11 @@
 
                             <div class="filter-group">
                                 <div class="button-box">
-                                    <button type="button" id="filter-btn2" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
+                                    <button type="button" id="filter-btn2" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay('filter-group-body2')"; onclick="toggleRotate()">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn2')">
+                                <div class="filter-group-header" onclick="toggleDisplay('filter-group-body2')"; onclick="toggleRotate('filter-btn2')">
                                     <h4>Multiples</h4>
                                 </div>
                             </div>
@@ -202,11 +203,11 @@
 
                             <div class="filter-group">
                                 <div class="button-box">
-                                    <button type="button" id="filter-btn3" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
+                                    <button type="button" id="filter-btn3" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay('filter-group-body3')"; onclick="toggleRotate('filter-btn3')">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn3')">
+                                <div class="filter-group-header" onclick="toggleDisplay('filter-group-body3')"; onclick="toggleRotate('filter-btn3')">
                                     <h4>Performance</h4>
                                 </div>
                             </div>
@@ -231,11 +232,11 @@
                         
                             <div class="filter-group">
                                 <div class="button-box">
-                                    <button type="button" id="filter-btn4" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
+                                    <button type="button" id="filter-btn4" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay('filter-group-body4')"; onclick="toggleRotate('filter-btn4')">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn4')">
+                                <div class="filter-group-header" onclick="toggleDisplay('filter-group-body4')"; onclick="toggleRotate('filter-btn4')">
                                     <h4>Income Statement</h4>
                                 </div>
                             </div>
@@ -314,11 +315,11 @@
                             
                             <div class="filter-group">
                                 <div class="button-box">
-                                    <button type="button" id="filter-btn5" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay()"; onclick="toggleRotate()">
+                                    <button type="button" id="filter-btn5" title="filter-btn" class="filter-group-btn" onclick="toggleDisplay('filter-group-body5')"; onclick="toggleRotate('filter-btn5')">
                                         <i class="fas fa-chevron-circle-down fa-2x"></i>
                                     </button>
                                 </div>
-                                <div class="filter-group-header" onclick="toggleDisplay()"; onclick="toggleRotate('#filter-btn5')">
+                                <div class="filter-group-header" onclick="toggleDisplay('filter-group-body5')"; onclick="toggleRotate('filter-btn5')">
                                     <h4>Balance Sheet</h4>
                                 </div>
                             </div>
@@ -433,37 +434,6 @@
                  </div>
             </div>
         </section>
-
-        <script src="index.js"></script>
-
-        <script>
-            function toggleDisplay() {
-                var x = document.getElementById("filter-group-body1");
-                if (x.style.display === "none") {
-                x.style.display = "table";
-                } else {
-                x.style.display = "none";
-                }
-            }
-        </script>
-
-        <script>
-            (function toggleRotate(document){
-            var div = document.getElementById('button-box');
-            var icon = document.getElementById('filter-btn1');
-            var active = false;
-
-            div.addEventListener('click', function(){
-                if(active){
-                icon.className = 'filter-group-btn';  
-                } else {
-                icon.className = 'filter-btn active';
-                }
-
-                active = !active;
-            });
-            })(document);
-        </script>
 
     </body>
 

@@ -384,8 +384,9 @@ input:checked + .fed-slider:before {
     background-color: black;
     align-items: center;
     justify-content: left;
-    border-radius: 20px;
     margin-right: 1%;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(80, 80, 80);
 }
 
 .filter-group-header {
@@ -413,6 +414,7 @@ input:checked + .fed-slider:before {
     height: 30px;
     width: 30px;
     padding: 8px;
+    border-radius: 10px;
 }
 
 .filter-btn.active {
