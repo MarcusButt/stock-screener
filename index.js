@@ -1,8 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-function toggleDisplay() {
-    var x = document.getElementById("filter-group-body1");
+function toggleDisplay(id) {
+    var x = document.getElementById(id);
     if (x.style.display === "none") {
       x.style.display = "table";
     } else {
@@ -10,12 +7,12 @@ function toggleDisplay() {
     }
   }
 
-(function(document){
-  var div = document.getElementById('button-box');
+  els = document.getElementsByClassName('button-box')
   var icon = document.getElementById('filter-btn1');
   var active = false;
 
-  div.addEventListener('click', function(){
+  for(var i=0; i<els.length; ++i){
+    div.addEventListener('click', function(){
       if(active){
       icon.className = 'filter-group-btn';  
       } else {
@@ -24,4 +21,5 @@ function toggleDisplay() {
 
       active = !active;
   });
-  })(document);
+
+  }
