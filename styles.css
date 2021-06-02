@@ -404,6 +404,7 @@ input:checked + .fed-slider:before {
 
 .button-box {
     position: relative;
+    transform: none;
     white-space: nowrap;
     display: flex;
     justify-content: center;
@@ -417,7 +418,7 @@ input:checked + .fed-slider:before {
     border-radius: 10px;
 }
 
-.filter-btn.active {
+.filter-btn-active {
     transform:  rotate(-90deg);
     display: flex;
     justify-content: center;
@@ -431,6 +432,7 @@ input:checked + .fed-slider:before {
 }
 
 .filter-group-btn {
+    transform: none;
     display: flex;
     justify-content: center;
     align-items: center;
