@@ -417,9 +417,10 @@ input:checked + .fed-slider:before {
     border-radius: 10px;
 }
 
-.filter-btn-active {
+.filter-group-btn.open {
     transform:  rotate(-90deg);
     -moz-transform: rotate(-90deg);
+    transition: transform 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -432,6 +433,9 @@ input:checked + .fed-slider:before {
 }
 
 .filter-group-btn {
+    transform:  none;
+    -moz-transform: none;
+    transition: transform 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
