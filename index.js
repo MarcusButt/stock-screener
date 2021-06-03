@@ -17,23 +17,6 @@ function toggleDisplay(id) {
 //   }
 // }
 
-
-// (function toggleRotate(id){
-//   var div = document.getElementById('button-box');
-//   var icon = document.getElementById(id);
-//   var open = false;
-  
-//   div.addEventListener('click', function(){
-//     if(open){
-//       icon.className = 'filter-group-btn';  
-//     } else{
-//       icon.className = 'filter-group-btn open';
-//     }
-    
-//     open = !open;
-//   });
-// })(document);
-
 function search_ticker(){
   var x = document.getElementById("search_ticker_company").value;
   console.log(x)
