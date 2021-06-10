@@ -60,6 +60,18 @@ var debt_equity_ratio = 0;
 var lt_debt_equity_ratio = 0;
 var return_on_assets = 0;
 var return_on_equity = 0;
+var economic_calendar_event = "";
+var economic_calendar_entity = "";
+var economic_calendar_date = "";
+var market_activity_ticker = "";
+var market_activity_name = "";
+var market_activity_price = 0;
+var market_activity_close = 0;
+var market_activity_change = 0;
+var market_activity_volume = 0;
+
+
+
 
 
 
