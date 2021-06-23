@@ -99,7 +99,15 @@
                                 <div class="filter-group-row">
                                     <div class="filter-property">
                                         <label for="marketcap" class="screener-label">Market Cap (in $USD millions):</label>
-                                        <input type="number" id="marketcap" name="marketcap" class="screener-input" min="0" max="5000">
+                                        <select name="marketcap" id="marketcap">
+                                            <option value="Any">Any</option>
+                                            <option value="mega">Mega ($200b and more)</option>
+                                            <option value="large">Large ($10b to $200b)</option>
+                                            <option value="mid">Mid ($2b to $10b)</option>
+                                            <option value="small">Small ($300m to $2b)</option>
+                                            <option value="micro">Micro ($50m to $300m)</option>
+                                            <option value="nano">Nano (less than $50m)</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="sector" class="screener-label">Sector:</label>

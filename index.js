@@ -17,9 +17,34 @@ function toggleDisplay(id) {
 //   }
 // }
 
+var stock = {
+  'AAPL' : {
+            'Name': 'Test0',
+            'Price': 0254,
+            'Open' : 452 ,
+            'Prev' : 15,
+            'Close' : 561,
+            'Volume' : 4563,
+           },
+  'HIPL' : {
+            'Name': 'Test1',
+            'Price': 545,
+            'Open' :  5465,
+            'Prev' : 584,
+            'Close' : 46848,
+            'Volume' : 56,
+           }
+  }
+
 function search_ticker(){
+
+
   var searchbar_input = document.getElementById("search_ticker_company").value;
-  console.log(searchbar_input)
+
+  console.log(searchbar_input);
+
+  console.log(stock[searchbar_input]);
+  
 }
 
 var screenGeneral = { 
