@@ -41,6 +41,8 @@ function search_ticker(){
 
   var searchbar_input = document.getElementById("search_ticker_company").value;
 
+  location.replace("company-profile.html");
+
   console.log(searchbar_input);
 
   console.log(stock[searchbar_input]);
