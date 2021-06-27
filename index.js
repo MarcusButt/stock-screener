@@ -19,21 +19,37 @@ function toggleDisplay(id) {
 
 var stock = {
   'AAPL' : {
-            'Name': 'Test0',
-            'Price': 0254,
+            'Name': 'Apple',
+            'Price': 254,
             'Open' : 452 ,
             'Prev' : 15,
             'Close' : 561,
-            'Volume' : 4563,
+            'Volume' : 4563411,
            },
-  'HIPL' : {
-            'Name': 'Test1',
-            'Price': 545,
-            'Open' :  5465,
-            'Prev' : 584,
-            'Close' : 46848,
-            'Volume' : 56,
-           }
+  'AMZN' : {
+            'Name': 'Amazon',
+            'Price': 3256,
+            'Open' :  3200,
+            'Prev' : 3356,
+            'Close' : 3259,
+            'Volume' : 562232,
+           },
+  'NFLX' : {
+            'Name': 'Netflix',
+            'Price': 333,
+            'Open' :  310,
+            'Prev' : 300,
+            'Close' : 315,
+            'Volume' : 567877,
+           },
+ 'XOM' : {
+            'Name': 'ExxonMobil',
+            'Price': 62,
+            'Open' :  61,
+            'Prev' : 58.45,
+            'Close' : 61.21,
+            'Volume' : 2365899,
+           },
   }
 
 function search_ticker(){
