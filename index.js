@@ -7,6 +7,10 @@ function toggleDisplay(id) {
     }
   }
 
+function home() {
+  location.replace("index.html");
+}
+
 // function toggleRotate(id) {
 //   var elm = document.getElementById(id);
 //   var className = elm.className;

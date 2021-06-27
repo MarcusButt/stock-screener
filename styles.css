@@ -121,6 +121,9 @@
     padding-left: 4%;
     align-items: center;
     cursor: pointer;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: rgb(128, 128, 128);
 }
 
 .sidebar-row:hover {
