@@ -201,7 +201,35 @@ th, td {
     padding: 2px;
 }
 
-.activity-list {
+.overview-table {
+    border: none;
+    border-top: 2px solid rgb(80, 80, 80);
+    padding: 2px;
+}
+
+.performance-table {
+    display: none;
+    border: none;
+    border-top: 2px solid rgb(80, 80, 80);
+    padding: 2px;
+}
+
+.financials-table {
+    display: none;
+    border: none;
+    border-top: 2px solid rgb(80, 80, 80);
+    padding: 2px;
+}
+
+.balance-table {
+    display: none;
+    border: none;
+    border-top: 2px solid rgb(80, 80, 80);
+    padding: 2px;
+}
+
+.analyst-table {
+    display: none;
     border: none;
     border-top: 2px solid rgb(80, 80, 80);
     padding: 2px;
