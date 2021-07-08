@@ -325,6 +325,14 @@ input:checked + .fed-slider:before {
     width:84%;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    box-shadow: rgb(245, 174, 108);
+    -webkit-box-shadow: 0 0 0 30px rgb(245, 174, 108) inset !important;
+}
+
 .search-button {
     display: flex;
     width: 10%;
