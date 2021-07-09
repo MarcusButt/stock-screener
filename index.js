@@ -26,15 +26,11 @@ function home() {
   location.replace("index.html");
 }
 
-// function toggleRotate(id) {
-//   var elm = document.getElementById(id);
-//   var className = elm.className;
-//   if(className.indexOf('filter-btn-active') === -1) {
-//       elm.className = elm.className + 'filter-btn-active';
-//   } else {
-//       elm.className = elm.className.replace('filter-btn-active', '');
-//   }
-// }
+function toggleRotate(id) {
+  var a = document.getElementById(id);
+  a.classList.toggle("filter-group-btn-open");
+}
+
 
 var stock = {
   'AAPL' : {
