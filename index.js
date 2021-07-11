@@ -1,17 +1,17 @@
-// function to handle success
-function success() {
-  var data = JSON.parse(this.responseText); //parse the string to JSON
-  console.log(data);
-}
-// function to handle error
-function error(err) {
-  console.log('Request Failed', err); //error details will be in the "err" object
-}
-var xhr = new XMLHttpRequest(); //invoke a new instance of the XMLHttpRequest
-xhr.onload = success; // call success function if request is successful
-xhr.onerror = error;  // call error function if request failed
-xhr.open('GET', 'https://api.github.com/users/MarcusButt'); // open a GET request
-xhr.send(); // send the request to the server.
+// // function to handle success
+// function success() {
+//   var data = JSON.parse(this.responseText); //parse the string to JSON
+//   console.log(data);
+// }
+// // function to handle error
+// function error(err) {
+//   console.log('Request Failed', err); //error details will be in the "err" object
+// }
+// var xhr = new XMLHttpRequest(); //invoke a new instance of the XMLHttpRequest
+// xhr.onload = success; // call success function if request is successful
+// xhr.onerror = error;  // call error function if request failed
+// xhr.open('GET', 'https://api.github.com/users/MarcusButt'); // open a GET request
+// xhr.send(); // send the request to the server.
 
 function toggleDisplay(id) {
     var x = document.getElementById(id);
@@ -67,12 +67,26 @@ var stock = {
            },
   }
 
+let symbol = ""
+
 function search_ticker(){
 
+  var symbol = document.getElementById("search_ticker_company").value;
 
-  var searchbar_input = document.getElementById("search_ticker_company").value;
+  const ws = new WebSocket("ws://localhost:9090")
 
-  location.replace("company-profile.html");
+  ws.addEventListener("open" , () =>{
+    console.log("Client is connected!")
+    ws.send(symbol)
+  })
+
+  ws.addEventListener("message" , stockinfo => {
+    let response_stockinfo = JSON.parse(JSON.stringify(stockinfo));
+    console.log("The response arrived from server", JSON.parse(stockinfo.data));
+    console.log(response_stockinfo);
+  })
+
+  // location.replace("company-profile.html");
 
   console.log(searchbar_input);
 
