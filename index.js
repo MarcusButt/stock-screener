@@ -1,17 +1,3 @@
-// // function to handle success
-// function success() {
-//   var data = JSON.parse(this.responseText); //parse the string to JSON
-//   console.log(data);
-// }
-// // function to handle error
-// function error(err) {
-//   console.log('Request Failed', err); //error details will be in the "err" object
-// }
-// var xhr = new XMLHttpRequest(); //invoke a new instance of the XMLHttpRequest
-// xhr.onload = success; // call success function if request is successful
-// xhr.onerror = error;  // call error function if request failed
-// xhr.open('GET', 'https://api.github.com/users/MarcusButt'); // open a GET request
-// xhr.send(); // send the request to the server.
 
 function toggleDisplay(id) {
     var x = document.getElementById(id);
@@ -32,40 +18,40 @@ function toggleRotate(id) {
 }
 
 
-var stock = {
-  'AAPL' : {
-            'Name': 'Apple',
-            'Price': 254,
-            'Open' : 452 ,
-            'Prev' : 15,
-            'Close' : 561,
-            'Volume' : 4563411,
-           },
-  'AMZN' : {
-            'Name': 'Amazon',
-            'Price': 3256,
-            'Open' :  3200,
-            'Prev' : 3356,
-            'Close' : 3259,
-            'Volume' : 562232,
-           },
-  'NFLX' : {
-            'Name': 'Netflix',
-            'Price': 333,
-            'Open' :  310,
-            'Prev' : 300,
-            'Close' : 315,
-            'Volume' : 567877,
-           },
- 'XOM' : {
-            'Name': 'ExxonMobil',
-            'Price': 62,
-            'Open' :  61,
-            'Prev' : 58.45,
-            'Close' : 61.21,
-            'Volume' : 2365899,
-           },
-  }
+// var stock = {
+//   'AAPL' : {
+//             'Name': 'Apple',
+//             'Price': 254,
+//             'Open' : 452 ,
+//             'Prev' : 15,
+//             'Close' : 561,
+//             'Volume' : 4563411,
+//            },
+//   'AMZN' : {
+//             'Name': 'Amazon',
+//             'Price': 3256,
+//             'Open' :  3200,
+//             'Prev' : 3356,
+//             'Close' : 3259,
+//             'Volume' : 562232,
+//            },
+//   'NFLX' : {
+//             'Name': 'Netflix',
+//             'Price': 333,
+//             'Open' :  310,
+//             'Prev' : 300,
+//             'Close' : 315,
+//             'Volume' : 567877,
+//            },
+//  'XOM' : {
+//             'Name': 'ExxonMobil',
+//             'Price': 62,
+//             'Open' :  61,
+//             'Prev' : 58.45,
+//             'Close' : 61.21,
+//             'Volume' : 2365899,
+//            },
+//   }
 
 let symbol = ""
 

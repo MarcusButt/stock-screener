@@ -141,7 +141,19 @@
                                 <div class="filter-group-row">
                                     <div class="filter-property">
                                         <label for="employees" class="screener-label">Number of Employees:</label>
-                                        <input type="number" id="employees" name="employees" class="screener-input" min="1">
+                                        <select name="employees" id="employees">
+                                            <option value="employees0">Any</option>
+                                            <option value="employees1">Micro (less than 10)</option>
+                                            <option value="employees2">Small (10-100)</option>
+                                            <option value="employees3">Medium (100-499)</option>
+                                            <option value="employees4">Large (500-1499)</option>
+                                            <option value="employees5">Very Large (1500-9999)</option>
+                                            <option value="employees6">Mega (10K+)</option>
+                                            <option value="employees7">Small+ (10+)</option>
+                                            <option value="employees8">Medium+ (100+)</option>
+                                            <option value="employees9">Large+ (500+)</option>
+                                            <option value="employees10">Very Large+ (1500+)</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="volume" class="screener-label">Volume:</label>
@@ -167,22 +179,22 @@
                                     <div class="filter-property">
                                         <label for="avg-volume" class="screener-label">Avg. Volume:</label>
                                         <select name="avg-volume" id="avg-volume">
-                                            <option value="vol0">Any</option>
-                                            <option value="vol1">Under 100K</option>
-                                            <option value="vol2">Under 250K</option>
-                                            <option value="vol3">Under 500K</option>
-                                            <option value="vol4">Under 750K</option>
-                                            <option value="vol5">Under 1M</option>
-                                            <option value="vol6">Over 100K</option>
-                                            <option value="vol7">Over 250K</option>
-                                            <option value="vol8">Over 500K</option>
-                                            <option value="vol9">Over 750K</option>
-                                            <option value="vol10">Over 1M</option>
-                                            <option value="vol11">Over 2M</option>
-                                            <option value="vol12">100K to 500K</option>
-                                            <option value="vol13">100K to 1M</option>
-                                            <option value="vol14">500K to 1M</option>
-                                            <option value="vol15">500K to 10M</option>
+                                            <option value="avg-vol0">Any</option>
+                                            <option value="avg-vol1">Under 100K</option>
+                                            <option value="avg-vol2">Under 250K</option>
+                                            <option value="avg-vol3">Under 500K</option>
+                                            <option value="avg-vol4">Under 750K</option>
+                                            <option value="avg-vol5">Under 1M</option>
+                                            <option value="avg-vol6">Over 100K</option>
+                                            <option value="avg-vol7">Over 250K</option>
+                                            <option value="avg-vol8">Over 500K</option>
+                                            <option value="avg-vol9">Over 750K</option>
+                                            <option value="avg-vol10">Over 1M</option>
+                                            <option value="avg-vol11">Over 2M</option>
+                                            <option value="avg-vol12">100K to 500K</option>
+                                            <option value="avg-vol13">100K to 1M</option>
+                                            <option value="avg-vol14">500K to 1M</option>
+                                            <option value="avg-vol15">500K to 10M</option>
                                         </select>
                                     </div>
                                 </div>
@@ -225,21 +237,80 @@
                                     </div>
                                     <div class="filter-property">
                                         <label for="shares-outstanding" class="screener-label">Shares Outstanding:</label>
-                                        <input type="number" id="shares-outstanding" name="shares-outstanding" class="screener-input" min="0">
+                                        <select name="shares-outstanding" id="shares-outstanding">
+                                            <option value="shares0">Any</option>
+                                            <option value="shares1">Under 1M</option>
+                                            <option value="shares2">Under 5M</option>
+                                            <option value="shares3">Under 10M</option>
+                                            <option value="shares4">Under 20M</option>
+                                            <option value="shares5">Under 50M</option>
+                                            <option value="shares6">Under 100M</option>
+                                            <option value="shares7">Over 1M</option>
+                                            <option value="shares8">Over 5M</option>
+                                            <option value="shares9">Over 10M</option>
+                                            <option value="shares10">Over 20M</option>
+                                            <option value="shares11">Over 50M</option>
+                                            <option value="shares12">Over 100M</option>
+                                            <option value="shares13">Over 200M</option>
+                                            <option value="shares14">Over 500M</option>
+                                            <option value="shares15">Over 1B</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="filter-group-row">
                                     <div class="filter-property">
                                         <label for="float-short" class="screener-label">% Float Short:</label>
-                                        <input type="number" id="shares-outstanding" name="shares-outstanding" class="screener-input" min="0">
+                                        <select name="float-short" id="float-short">
+                                            <option value="float-short0">Any</option>
+                                            <option value="float-short1">Low (under 5%)</option>
+                                            <option value="float-short2">High (over 20%)</option>
+                                            <option value="float-short3">Under 10%</option>
+                                            <option value="float-short4">Under 20%</option>
+                                            <option value="float-short5">Under 30%</option>
+                                            <option value="float-short6">Over 10%</option>
+                                            <option value="float-short7">Over 15%</option>
+                                            <option value="float-short8">Over 20%</option>
+                                            <option value="float-short9">Over 25%</option>
+                                            <option value="float-short10">Over 30%</option>
+                                            <option value="float-short11">Over 40%</option>
+                                            <option value="float-short12">Over 50%</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="enterprise-value" class="screener-label">Enterprise Value:</label>
-                                        <input type="number" id="enterprise-value" name="enterprise-value" class="screener-input" min="0">
+                                        <select name="enterprise-value" id="enterprise-value">
+                                            <option value="Any">Any</option>
+                                            <option value="mega">Mega ($500b and more)</option>
+                                            <option value="large">Large ($100b to $500b)</option>
+                                            <option value="mid">Mid ($10b to $100b)</option>
+                                            <option value="small-mid">Small-Mid ($2b to $10b)</option>
+                                            <option value="small">Small ($500m to $2b)</option>
+                                            <option value="micro">Micro ($100m to $500m)</option>
+                                            <option value="nano">Nano (less than $100m)</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
-                                        <label for="Beta" class="screener-label">Beta:</label>
-                                        <input type="number" id="beta" name="beta" class="screener-input">
+                                        <label for="beta" class="screener-label">Beta:</label>
+                                        <select name="beta" id="beta">
+                                            <option value="beta0">Any</option>
+                                            <option value="beta1">Under 0</option>
+                                            <option value="beta2">Under 0.5</option>
+                                            <option value="beta3">Under 1</option>
+                                            <option value="beta4">Under 1.5</option>
+                                            <option value="beta5">Under 2</option>
+                                            <option value="beta6">Over 0</option>
+                                            <option value="beta7">Over 0.5</option>
+                                            <option value="beta8">Over 1</option>
+                                            <option value="beta9">Over 1.5</option>
+                                            <option value="beta10">Over 2</option>
+                                            <option value="beta11">Over 3</option>
+                                            <option value="beta12">Over 4</option>
+                                            <option value="beta13">0 to 0.5</option>
+                                            <option value="beta14">0.5 to 1</option>
+                                            <option value="beta15">0.5 to 1.5</option>
+                                            <option value="beta16">1 to 1.5</option>
+                                            <option value="beta17">1 to 2</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -258,15 +329,62 @@
                                 <div class="filter-group-row">
                                     <div class="filter-property">
                                         <label for="price-earnings" class="screener-label">P/E Ratio:</label>
-                                        <input type="number" id="price-earnings" name="price-earnings" class="screener-input">
+                                        <select name="price-earnings" id="price-earnings">
+                                            <option value="pe0">Any</option>
+                                            <option value="pe1">Low (less than 15)</option>
+                                            <option value="pe2">High (over 50)</option>
+                                            <option value="pe3">Under 10</option>
+                                            <option value="pe4">Under 20</option>
+                                            <option value="pe5">Under 30</option>
+                                            <option value="pe6">Under 40</option>
+                                            <option value="pe7">Under 50</option>
+                                            <option value="pe8">Over 10</option>
+                                            <option value="pe9">Over 20</option>
+                                            <option value="pe10">Over 30</option>
+                                            <option value="pe11">Over 40</option>
+                                            <option value="pe12">Over 50</option>
+                                            <option value="pe13">10 to 20</option>
+                                            <option value="pe14">20 to 30</option>
+                                            <option value="pe15">30 to 40</option>
+                                            <option value="pe16">25 to 50</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="price-sales" class="screener-label">P/S Ratio:</label>
-                                        <input type="number" id="price-sales" name="price-sales" class="screener-input">
+                                        <select name="price-sales" id="price-sales">
+                                            <option value="ps0">Any</option>
+                                            <option value="ps1">Low (less than 1)</option>
+                                            <option value="ps2">High (over 10)</option>
+                                            <option value="ps3">Under 2</option>
+                                            <option value="ps4">Under 4</option>
+                                            <option value="ps5">Under 6</option>
+                                            <option value="ps6">Under 8</option>
+                                            <option value="ps7">Under 10</option>
+                                            <option value="ps8">Over 2</option>
+                                            <option value="ps9">Over 4</option>
+                                            <option value="ps10">Over 6</option>
+                                            <option value="ps11">Over 8</option>
+                                            <option value="ps12">Over 10</option>
+                                            <option value="ps13">1 to 5</option>
+                                            <option value="ps14">5 to 10</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="ev-ebitda" class="screener-label">EV/EBITDA:</label>
-                                        <input type="number" id="ev-ebitda" name="ev-ebitda" class="screener-input" min="0">
+                                        <select name="ev-ebitda" id="ev-ebitda">
+                                            <option value="ps0">Any</option>
+                                            <option value="ps1">Less than 10</option>
+                                            <option value="ps2">Less than 25</option>
+                                            <option value="ps3">Less than 50</option>
+                                            <option value="ps4">Less than 100</option>
+                                            <option value="ps5">Over 10</option>
+                                            <option value="ps6">Over 25</option>
+                                            <option value="ps7">Over 50</option>
+                                            <option value="ps8">Over 100</option>
+                                            <option value="ps9">10 to 25</option>
+                                            <option value="ps10">25 to 50</option>
+                                            <option value="ps11">50 to 100</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -314,7 +432,25 @@
                                 <div class="filter-group-row">
                                     <div class="filter-property">
                                         <label for="revenue" class="screener-label">Revenue:</label>
-                                        <input type="number" id="revenue" name="revenue" class="screener-input">
+                                        <select name="revenue" id="revenue">
+                                            <option value="ps0">Any</option>
+                                            <option value="ps1">Less than 50M</option>
+                                            <option value="ps2">Less than 100M</option>
+                                            <option value="ps3">Less than 250M</option>
+                                            <option value="ps4">Less than 500M</option>
+                                            <option value="ps5">Less than 1B</option>
+                                            <option value="ps6">Less than 10B</option>
+                                            <option value="ps7">Over 50M</option>
+                                            <option value="ps8">Over 100M</option>
+                                            <option value="ps9">Over 250M</option>
+                                            <option value="ps10">Over 500M</option>
+                                            <option value="ps11">Over 1B</option>
+                                            <option value="ps12">Over 10B</option>
+                                            <option value="ps13">Over 25B</option>
+                                            <option value="ps14">Over 50B</option>
+                                            <option value="ps15">Over 100B</option>
+                                            <option value="ps16">Over 500B</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="gross-income" class="screener-label">Gross Income:</label>
@@ -397,7 +533,23 @@
                                 <div class="filter-group-row">
                                     <div class="filter-property">
                                         <label for="current-ratio" class="screener-label">Current Ratio:</label>
-                                        <input type="number" id="current-ratio" name="current-ratio" class="screener-input">
+                                        <select name="current-ratio" id="current-ratio">
+                                            <option value="ps0">Any</option>
+                                            <option value="ps1">Low (less than 1)</option>
+                                            <option value="ps2">High (over 10)</option>
+                                            <option value="ps3">Under 2</option>
+                                            <option value="ps4">Under 4</option>
+                                            <option value="ps5">Under 6</option>
+                                            <option value="ps6">Under 8</option>
+                                            <option value="ps7">Under 10</option>
+                                            <option value="ps8">Over 2</option>
+                                            <option value="ps9">Over 4</option>
+                                            <option value="ps10">Over 6</option>
+                                            <option value="ps11">Over 8</option>
+                                            <option value="ps12">Over 10</option>
+                                            <option value="ps13">1 to 5</option>
+                                            <option value="ps14">5 to 10</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="quick-ratio" class="screener-label">Quick Ratio:</label>
