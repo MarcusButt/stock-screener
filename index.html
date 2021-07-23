@@ -411,10 +411,28 @@
                                         <option value="quarter">Quarter</option>
                                         <option value="year">Year</option>
                                     </select>
-                                    <label for="value-range" class="value-range-label">Range of Values:</label>
-                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
-                                    <p class ="filter-body-text">to</p>
-                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
+                                    <label for="value-range" class="value-range-label">Value:</label>
+                                    <select name="percent-change" id="percent-change">
+                                        <option value="percent-change0">Any</option>
+                                        <option value="percent-change1">Negative (less than 0%)</option>
+                                        <option value="percent-change2">Positive (greater than 0%)</option>
+                                        <option value="percent-change3">+5%</option>
+                                        <option value="percent-change4">+10%</option>
+                                        <option value="percent-change5">+15%</option>
+                                        <option value="percent-change6">+20%</option>
+                                        <option value="percent-change7">+25%</option>
+                                        <option value="percent-change8">+30%</option>
+                                        <option value="percent-change9">+40%</option>
+                                        <option value="percent-change10">+50%</option>
+                                        <option value="percent-change11">-5%</option>
+                                        <option value="percent-change12">-10%</option>
+                                        <option value="percent-change13">-15%</option>
+                                        <option value="percent-change14">-20%</option>
+                                        <option value="percent-change15">-25%</option>
+                                        <option value="percent-change16">-30%</option>
+                                        <option value="percent-change17">-40%</option>
+                                        <option value="percent-change18">-50%</option>
+                                    </select>
                                 </div>
                             </div>
                         
@@ -454,26 +472,107 @@
                                     </div>
                                     <div class="filter-property">
                                         <label for="gross-income" class="screener-label">Gross Income:</label>
-                                        <input type="number" id="gross-income" name="gross-income" class="screener-input">
+                                        <select name="gross-income" id="gross-income">
+                                            <option value="ps0">Any</option>
+                                            <option value="ps1">Less than 50M</option>
+                                            <option value="ps2">Less than 100M</option>
+                                            <option value="ps3">Less than 250M</option>
+                                            <option value="ps4">Less than 500M</option>
+                                            <option value="ps5">Less than 1B</option>
+                                            <option value="ps6">Less than 10B</option>
+                                            <option value="ps7">Over 50M</option>
+                                            <option value="ps8">Over 100M</option>
+                                            <option value="ps9">Over 250M</option>
+                                            <option value="ps10">Over 500M</option>
+                                            <option value="ps11">Over 1B</option>
+                                            <option value="ps12">Over 10B</option>
+                                            <option value="ps13">Over 25B</option>
+                                            <option value="ps14">Over 50B</option>
+                                            <option value="ps15">Over 100B</option>
+                                            <option value="ps16">Over 500B</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="net-income" class="screener-label">Net Income:</label>
-                                        <input type="number" id="net-income" name="net-income" class="screener-input" min="0">
+                                        <select name="net-income" id="net-income">
+                                            <option value="ps0">Any</option>
+                                            <option value="ps1">Less than 50M</option>
+                                            <option value="ps2">Less than 100M</option>
+                                            <option value="ps3">Less than 250M</option>
+                                            <option value="ps4">Less than 500M</option>
+                                            <option value="ps5">Less than 1B</option>
+                                            <option value="ps6">Less than 10B</option>
+                                            <option value="ps7">Over 50M</option>
+                                            <option value="ps8">Over 100M</option>
+                                            <option value="ps9">Over 250M</option>
+                                            <option value="ps10">Over 500M</option>
+                                            <option value="ps11">Over 1B</option>
+                                            <option value="ps12">Over 10B</option>
+                                            <option value="ps13">Over 25B</option>
+                                            <option value="ps14">Over 50B</option>
+                                            <option value="ps15">Over 100B</option>
+                                            <option value="ps16">Over 500B</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="filter-multi-property">
-                                    <label for="eps" class="screener-label">EPS:</label>
-                                    <label for="timeframe" class="timeframe-label">Timeframe:</label>
-                                    <select name="timeframe" id="timeframe">
-                                        <option disabled selectted value> - Select a Timeframe - </option>
-                                        <option value="quarter">Quarter</option>
-                                        <option value="year">Year</option>
-                                        <option value="TTM">TTM</option>
-                                    </select>
-                                    <label for="value-range" class="value-range-label">Range of Values:</label>
-                                    <input type="number" id="eps" name="eps" class="screener-input" placeholder="0">
-                                    <p class ="filter-body-text">to</p>
-                                    <input type="number" id="eps" name="eps" class="screener-input">
+                                <div class="filter-group-row">
+                                    <div class="filter-property">
+                                        <label for="operating-margin" class="screener-label">Operating Margin:</label>
+                                        <select name="operating-margin" id="operating-margin">
+                                            <option value="operating-margin0">Any</option>
+                                            <option value="operating-margin1">Negative (under 0%)</option>
+                                            <option value="operating-margin2">Positive (over 0%)</option>
+                                            <option value="operating-margin3">Under 10%</option>
+                                            <option value="operating-margin4">Under 20%</option>
+                                            <option value="operating-margin5">Under 30%</option>
+                                            <option value="operating-margin6">Over 10%</option>
+                                            <option value="operating-margin7">Over 15%</option>
+                                            <option value="operating-margin8">Over 20%</option>
+                                            <option value="operating-margin9">Over 25%</option>
+                                            <option value="operating-margin10">Over 30%</option>
+                                            <option value="operating-margin11">Over 40%</option>
+                                            <option value="operating-margin12">Over 50%</option>
+                                            <option value="operating-margin13">Over 100%</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-property">
+                                        <label for="gross-margin" class="screener-label">Gross Margin:</label>
+                                        <select name="gross-margin" id="gross-margin">
+                                            <option value="gross-margin0">Any</option>
+                                            <option value="gross-margin1">Negative (under 0%)</option>
+                                            <option value="gross-margin2">Positive (over 0%)</option>
+                                            <option value="gross-margin3">Under 10%</option>
+                                            <option value="gross-margin4">Under 20%</option>
+                                            <option value="gross-margin5">Under 30%</option>
+                                            <option value="gross-margin6">Over 10%</option>
+                                            <option value="gross-margin7">Over 15%</option>
+                                            <option value="gross-margin8">Over 20%</option>
+                                            <option value="gross-margin9">Over 25%</option>
+                                            <option value="gross-margin10">Over 30%</option>
+                                            <option value="gross-margin11">Over 40%</option>
+                                            <option value="gross-margin12">Over 50%</option>
+                                            <option value="gross-margin13">Over 100%</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-property">
+                                        <label for="profit-margin" class="screener-label">Profit Margin:</label>
+                                        <select name="profit-margin" id="profit-margin">
+                                            <option value="profit-margin0">Any</option>
+                                            <option value="profit-margin1">Negative (under 0%)</option>
+                                            <option value="profit-margin2">Positive (over 0%)</option>
+                                            <option value="profit-margin3">Under 10%</option>
+                                            <option value="profit-margin4">Under 20%</option>
+                                            <option value="profit-margin5">Under 30%</option>
+                                            <option value="profit-margin6">Over 10%</option>
+                                            <option value="profit-margin7">Over 15%</option>
+                                            <option value="profit-margin8">Over 20%</option>
+                                            <option value="profit-margin9">Over 25%</option>
+                                            <option value="profit-margin10">Over 30%</option>
+                                            <option value="profit-margin11">Over 40%</option>
+                                            <option value="profit-margin12">Over 50%</option>
+                                            <option value="profit-margin13">Over 100%</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="filter-multi-property">
                                     <label for="percent-eps-change" class="screener-label">% EPS Change:</label>
@@ -484,10 +583,23 @@
                                         <option value="year">Year</option>
                                         <option value="TTM">TTM</option>
                                     </select>
-                                    <label for="value-range" class="value-range-label">Range of Values:</label>
-                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
-                                    <p class ="filter-body-text">to</p>
-                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
+                                    <label for="value-range" class="value-range-label">Value:</label>
+                                    <select name="eps-change" id="eps-change">
+                                        <option value="eps-change0">Any</option>
+                                        <option value="eps-change1">Negative (less than 0%)</option>
+                                        <option value="eps-change2">Positive (greater than 0%)</option>
+                                        <option value="eps-change3">Under 10%</option>
+                                        <option value="eps-change4">Under 20%</option>
+                                        <option value="eps-change5">Under 30%</option>
+                                        <option value="eps-change6">Over 10%</option>
+                                        <option value="eps-change7">Over 15%</option>
+                                        <option value="eps-change8">Over 20%</option>
+                                        <option value="eps-change9">Over 25%</option>
+                                        <option value="eps-change10">Over 30%</option>
+                                        <option value="eps-change11">Over 40%</option>
+                                        <option value="eps-change12">Over 50%</option>
+                                        <option value="eps-change13">Over 100%</option>
+                                    </select>
                                 </div>
                                 <div class="filter-multi-property">
                                     <label for="ebitda" class="screener-label">EBITDA:</label>
@@ -498,10 +610,25 @@
                                         <option value="year">Year</option>
                                         <option value="TTM">TTM</option>
                                     </select>
-                                    <label for="value-range" class="value-range-label">Range of Values:</label>
-                                    <input type="number" id="ebitda" name="ebitda" class="screener-input" placeholder="0">
-                                    <p class ="filter-body-text">to</p>
-                                    <input type="number" id="ebitda" name="ebitda" class="screener-input">
+                                    <label for="value-range" class="value-range-label">Value:</label>
+                                    <select name="ebitda" id="ebitda">
+                                        <option value="ebitda">Any</option>
+                                        <option value="ebitda">Less than 50M</option>
+                                        <option value="ebitda">Less than 100M</option>
+                                        <option value="ebitda">Less than 250M</option>
+                                        <option value="ebitda">Less than 500M</option>
+                                        <option value="ebitda">Less than 1B</option>
+                                        <option value="ebitda">Less than 10B</option>
+                                        <option value="ebitda">Over 50M</option>
+                                        <option value="ebitda">Over 100M</option>
+                                        <option value="ebitda">Over 250M</option>
+                                        <option value="ebitda">Over 500M</option>
+                                        <option value="ebitda">Over 1B</option>
+                                        <option value="ebitda">Over 10B</option>
+                                        <option value="ebitda">Over 25B</option>
+                                        <option value="ebitda">Over 50B</option>
+                                        <option value="ebitda">Over 100B</option>
+                                    </select>
                                 </div>
                                 <div class="filter-multi-property">
                                     <label for="percent-ebitda-change" class="screener-label">% EBITDA Change:</label>
@@ -512,10 +639,23 @@
                                         <option value="year">Year</option>
                                         <option value="TTM">TTM</option>
                                     </select>
-                                    <label for="value-range" class="value-range-label">Range of Values:</label>
-                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
-                                    <p class ="filter-body-text">to</p>
-                                    <input type="number" id="percent-change" name="percent-change" class="screener-input">
+                                    <label for="value-range" class="value-range-label">Value:</label>
+                                    <select name="ebitda-change" id="ebitda-change">
+                                        <option value="ebitda-change0">Any</option>
+                                        <option value="ebitda-change1">Negative (less than 0%)</option>
+                                        <option value="ebitda-change2">Positive (greater than 0%)</option>
+                                        <option value="ebitda-change3">Under 10%</option>
+                                        <option value="ebitda-change4">Under 20%</option>
+                                        <option value="ebitda-change5">Under 30%</option>
+                                        <option value="ebitda-change6">Over 10%</option>
+                                        <option value="ebitda-change7">Over 15%</option>
+                                        <option value="ebitda-change8">Over 20%</option>
+                                        <option value="ebitda-change9">Over 25%</option>
+                                        <option value="ebitda-change10">Over 30%</option>
+                                        <option value="ebitda-change11">Over 40%</option>
+                                        <option value="ebitda-change12">Over 50%</option>
+                                        <option value="ebitda-change13">Over 100%</option>
+                                    </select>
                                 </div>
                             </div>
                             
@@ -534,44 +674,128 @@
                                     <div class="filter-property">
                                         <label for="current-ratio" class="screener-label">Current Ratio:</label>
                                         <select name="current-ratio" id="current-ratio">
-                                            <option value="ps0">Any</option>
-                                            <option value="ps1">Low (less than 1)</option>
-                                            <option value="ps2">High (over 10)</option>
-                                            <option value="ps3">Under 2</option>
-                                            <option value="ps4">Under 4</option>
-                                            <option value="ps5">Under 6</option>
-                                            <option value="ps6">Under 8</option>
-                                            <option value="ps7">Under 10</option>
-                                            <option value="ps8">Over 2</option>
-                                            <option value="ps9">Over 4</option>
-                                            <option value="ps10">Over 6</option>
-                                            <option value="ps11">Over 8</option>
-                                            <option value="ps12">Over 10</option>
-                                            <option value="ps13">1 to 5</option>
-                                            <option value="ps14">5 to 10</option>
+                                            <option value="current-ratio0">Any</option>
+                                            <option value="current-ratio1">Low (under 1)</option>
+                                            <option value="current-ratio2">High (over 5)</option>
+                                            <option value="current-ratio3">Under 2</option>
+                                            <option value="current-ratio4">Under 4</option>
+                                            <option value="current-ratio5">Under 6</option>
+                                            <option value="current-ratio6">Under 8</option>
+                                            <option value="current-ratio7">Under 10</option>
+                                            <option value="current-ratio8">Over 2</option>
+                                            <option value="current-ratio9">Over 4</option>
+                                            <option value="current-ratio10">Over 6</option>
+                                            <option value="current-ratio11">Over 8</option>
+                                            <option value="current-ratio12">Over 10</option>
+                                            <option value="current-ratio13">1 to 5</option>
+                                            <option value="current-ratio14">5 to 10</option>
                                         </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="quick-ratio" class="screener-label">Quick Ratio:</label>
-                                        <input type="number" id="quick-ratio" name="quick-ratio" class="screener-input">
+                                        <select name="quick-ratio" id="quick-ratio">
+                                            <option value="quick-ratio0">Any</option>
+                                            <option value="quick-ratio1">Low (under 1)</option>
+                                            <option value="quick-ratio2">High (over 5)</option>
+                                            <option value="quick-ratio3">Under 2</option>
+                                            <option value="quick-ratio4">Under 4</option>
+                                            <option value="quick-ratio5">Under 6</option>
+                                            <option value="quick-ratio6">Under 8</option>
+                                            <option value="quick-ratio7">Under 10</option>
+                                            <option value="quick-ratio8">Over 2</option>
+                                            <option value="quick-ratio9">Over 4</option>
+                                            <option value="quick-ratio10">Over 6</option>
+                                            <option value="quick-ratio11">Over 8</option>
+                                            <option value="quick-ratio12">Over 10</option>
+                                            <option value="quick-ratio13">1 to 5</option>
+                                            <option value="quick-ratio14">5 to 10</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="total-debt-equity">Total Debt/Equity Ratio:</label>
-                                        <input type="number" id="total-debt-equity" name="total-debt-equity" class="screener-input">
+                                        <select name="debt-equity" id="debt-equity">
+                                            <option value="debt-equity0">Any</option>
+                                            <option value="debt-equity1">Low (under 0.1)</option>
+                                            <option value="debt-equity2">High (over 0.5)</option>
+                                            <option value="debt-equity3">Under 0.2</option>
+                                            <option value="debt-equity4">Under 0.4</option>
+                                            <option value="debt-equity5">Under 0.6</option>
+                                            <option value="debt-equity6">Under 0.8</option>
+                                            <option value="debt-equity7">Under 1</option>
+                                            <option value="debt-equity8">Over 0.2</option>
+                                            <option value="debt-equity9">Over 0.4</option>
+                                            <option value="debt-equity10">Over 0.6</option>
+                                            <option value="debt-equity11">Over 0.8</option>
+                                            <option value="debt-equity12">Over 1</option>
+                                            <option value="debt-equity13">0.1 to 0.5</option>
+                                            <option value="debt-equity14">0.5 to 0.10</option>
+                                        </select>
                                     </div>
                                 </div>    
                                 <div class="filter-group-row">
                                     <div class="filter-property">
                                         <label for="lt-debt-equity" class="screener-label">Long Term Debt/Equity Ratio:</label>
-                                        <input type="number" id="lt-debt-equity" name="total-debt-equity" class="screener-input">
+                                        <select name="lt-debt-equity" id="lt-debt-equity">
+                                            <option value="lt-debt-equity0">Any</option>
+                                            <option value="lt-debt-equity1">Low (under 0.1)</option>
+                                            <option value="lt-debt-equity2">High (over 0.5)</option>
+                                            <option value="lt-debt-equity3">Under 0.2</option>
+                                            <option value="lt-debt-equity4">Under 0.4</option>
+                                            <option value="lt-debt-equity5">Under 0.6</option>
+                                            <option value="lt-debt-equity6">Under 0.8</option>
+                                            <option value="lt-debt-equity7">Under 1</option>
+                                            <option value="lt-debt-equity8">Over 0.2</option>
+                                            <option value="lt-debt-equity9">Over 0.4</option>
+                                            <option value="lt-debt-equity10">Over 0.6</option>
+                                            <option value="lt-debt-equity11">Over 0.8</option>
+                                            <option value="lt-debt-equity12">Over 1</option>
+                                            <option value="lt-debt-equity13">0.1 to 0.5</option>
+                                            <option value="lt-debt-equity14">0.5 to 0.10</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="roa" class="screener-label">Return on Assets:</label>
-                                        <input type="number" id="roa" name="roa" class="screener-input" min="0">
+                                        <select name="roa" id="roa">
+                                            <option value="roa0">Any</option>
+                                            <option value="roa1">Negative (under 0%)</option>
+                                            <option value="roa2">Positive (over 0%)</option>
+                                            <option value="roa3">Under 5%</option>
+                                            <option value="roa4">Under 10%</option>
+                                            <option value="roa5">Under 15%</option>
+                                            <option value="roa6">Under 20%</option>
+                                            <option value="roa7">Under 30%</option>
+                                            <option value="roa8">Under 40%</option>
+                                            <option value="roa9">Under 50%</option>
+                                            <option value="roa10">Over 5%</option>
+                                            <option value="roa11">Over 10%</option>
+                                            <option value="roa12">Over 15%</option>
+                                            <option value="roa13">Over 20%</option>
+                                            <option value="roa14">Over 30%</option>
+                                            <option value="roa15">Over 40%</option>
+                                            <option value="roa16">Over 50%</option>
+                                        </select>
                                     </div>
                                     <div class="filter-property">
                                         <label for="roe" class="screener-label">Return on Equity:</label>
-                                        <input type="number" id="roe" name="roe" class="screener-input" min="0">
+                                        <select name="roe" id="roe">
+                                            <option value="roe0">Any</option>
+                                            <option value="roe1">Negative (under 0%)</option>
+                                            <option value="roe2">Positive (over 0%)</option>
+                                            <option value="roe3">Under 5%</option>
+                                            <option value="roe4">Under 10%</option>
+                                            <option value="roe5">Under 15%</option>
+                                            <option value="roe6">Under 20%</option>
+                                            <option value="roe7">Under 30%</option>
+                                            <option value="roe8">Under 40%</option>
+                                            <option value="roe9">Under 50%</option>
+                                            <option value="roe10">Over 5%</option>
+                                            <option value="roe11">Over 10%</option>
+                                            <option value="roe12">Over 15%</option>
+                                            <option value="roe13">Over 20%</option>
+                                            <option value="roe14">Over 30%</option>
+                                            <option value="roe15">Over 40%</option>
+                                            <option value="roe16">Over 50%</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>

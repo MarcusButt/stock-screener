@@ -608,7 +608,7 @@ select {
     margin-right: 4px;
     padding: 4px;
     font-size: 11px;
-    max-width: 140px;
+    width: 150px;
     background-color: rgb(245, 174, 108);
 }
 
