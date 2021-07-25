@@ -17,41 +17,10 @@ function toggleRotate(id) {
   a.classList.toggle("filter-group-btn-open");
 }
 
-
-// var stock = {
-//   'AAPL' : {
-//             'Name': 'Apple',
-//             'Price': 254,
-//             'Open' : 452 ,
-//             'Prev' : 15,
-//             'Close' : 561,
-//             'Volume' : 4563411,
-//            },
-//   'AMZN' : {
-//             'Name': 'Amazon',
-//             'Price': 3256,
-//             'Open' :  3200,
-//             'Prev' : 3356,
-//             'Close' : 3259,
-//             'Volume' : 562232,
-//            },
-//   'NFLX' : {
-//             'Name': 'Netflix',
-//             'Price': 333,
-//             'Open' :  310,
-//             'Prev' : 300,
-//             'Close' : 315,
-//             'Volume' : 567877,
-//            },
-//  'XOM' : {
-//             'Name': 'ExxonMobil',
-//             'Price': 62,
-//             'Open' :  61,
-//             'Prev' : 58.45,
-//             'Close' : 61.21,
-//             'Volume' : 2365899,
-//            },
-//   }
+// function toggleRotate(a) {
+//   var a = document.getElementsByClassName("filter-group-btn");
+//   a.classList.toggle("filter-group-btn-open");
+// }
 
 let symbol = ""
 
